@@ -1,13 +1,13 @@
 # Semi-supervised-Federated-Learning-with-non-IID-Data-Algorithm-and-System-Design (GlobeCom'21)
 ## Abstract
-In this project, we design a Semi-supervised Federated Learning(SSFL) framework to slove classification problem.
+In this paper, we design a Semi-supervised Federated Learning(SSFL) framework to slove classification problem.
 
 ----
 ## Dataset
 We use the CIFAR-10 dataset including 56,000 training samples and 2,000 test samples as the validation dataset in our experiment. 
 ![](https://storage.googleapis.com/kaggle-competitions/kaggle/3649/media/cifar-10.png)
 
-And we also use the Fashion-MNIST dataset including 64,000 training samples and 2,000 test samples as the validation dataset.
+We also use the Fashion-MNIST dataset including 64,000 training samples and 2,000 test samples as the validation dataset.
 ![](https://codimd.xixiaoyao.cn/uploads/upload_9c41649d86cb07726c6b9d98dd6fbb8e.png)
 
 Furthermore, we introduce Dirchlet distribution function to simulate the different non-IID level scenario in our experiment. We control Dirchlet distribution via modify parameters in  /modules/data_generator.py.
@@ -18,10 +18,18 @@ z = np.random.dirichlet((0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1), size
 ----
 
 ## Framework
-In this project, we design a robust SSFL framework that uses the proposed FedMix algorithm to achieve high-precision semi-supervised learning.
+In this paper, we design a robust SSFL framework that uses the proposed FedMix algorithm to achieve high-precision semi-supervised learning.
 ![](https://codimd.xixiaoyao.cn/uploads/upload_625e1279e52f2a17729d28221c56e855.png)
 
-And we make some improvements on the code of this paper. [https://arxiv.org/abs/2006.12097]
+And we make some improvements on the code of this [paper](https://arxiv.org/abs/2006.12097) and you also can cite this paper:
+```
+@inproceedings{jeong2020federated,
+  title={Federated Semi-Supervised Learning with Inter-Client Consistency \& Disjoint Learning},
+  author={Jeong, Wonyong and Yoon, Jaehong and Yang, Eunho and Hwang, Sung Ju},
+  booktitle={International Conference on Learning Representations},
+  year={2020}
+}
+```
 
 
 ----
