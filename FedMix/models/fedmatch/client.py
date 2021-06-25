@@ -174,7 +174,7 @@ class Client:
         #        y_pred_1 = self.local_model(self.data_manager.rescale(x_1))
         #        y_pred_2 = self.local_model(self.data_manager.rescale(x_2))
         #for i in range(len(y_pred_1)):
-                loss_u += tf.math.reduce_sum(tf.math.square(y_pred_1 - y_pred_2)) * self.opt.lambda_2 
+        loss_u += tf.math.reduce_sum(tf.math.square(y_pred - y_hard)) * self.opt.lambda_2 
         conf = np.where(np.max(y_pred.numpy(), axis=1)>=self.opt.confidence)[0]
         if len(conf)>0:
             x_conf = self.data_manager.rescale(x[conf])
