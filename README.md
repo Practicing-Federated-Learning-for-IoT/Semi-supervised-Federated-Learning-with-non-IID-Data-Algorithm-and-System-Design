@@ -1,4 +1,4 @@
-# Semi-supervised-Federated-Learning-with-non-IID-Data-Algorithm-and-System-Design (GlobeCom'21)
+# Semi-supervised-Federated-Learning-with-non-IID-Data-Algorithm-and-System-Design (HPCC'21)
 Author: Zhe Zhang, Shiyao Ma, Zehui Xiong, Yi Wu, Qiang Yan, Xiaoke Xu, Dusit Niyato, Fellow, IEEE
 ## Abstract
 In this paper, we design a Semi-supervised Federated Learning(SSFL) framework to slove classification problem.
